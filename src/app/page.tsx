@@ -1,8 +1,6 @@
 import Script from "next/script";
 
-import { AppProps } from 'next/app';
-
-export default function MyApp({ Component, pageProps }: AppProps) {
+export default function Home() {
   return (
     <>
       {/* Google Analytics */}
@@ -24,8 +22,7 @@ export default function MyApp({ Component, pageProps }: AppProps) {
           `,
         }}
       />
-      i am khan
-      <Component {...pageProps} />
+      <h1>I am Khan</h1>
     </>
   );
 }
