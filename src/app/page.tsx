@@ -1,28 +1,11 @@
-import Script from "next/script";
+import React from 'react'
 
-export default function Home() {
+const page = () => {
   return (
-    <>
-      {/* Google Analytics */}
-      <Script
-        strategy="afterInteractive"
-        src={`https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX`}
-      />
-      <Script
-        id="google-analytics"
-        strategy="afterInteractive"
-        dangerouslySetInnerHTML={{
-          __html: `
-            window.dataLayer = window.dataLayer || [];
-            function gtag(){dataLayer.push(arguments);}
-            gtag('js', new Date());
-            gtag('config', 'G-XXXXXXXXXX', {
-              page_path: window.location.pathname,
-            });
-          `,
-        }}
-      />
-      <h1>I am Khan</h1>
-    </>
-  );
+    <div>
+      <h1>Hello, Umar!</h1>
+    </div>
+  )
 }
+
+export default page
