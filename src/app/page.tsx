@@ -24,6 +24,7 @@ export default function MyApp({ Component, pageProps }: AppProps) {
           `,
         }}
       />
+      i am khan
       <Component {...pageProps} />
     </>
   );
